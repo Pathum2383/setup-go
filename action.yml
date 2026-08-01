@@ -11,7 +11,7 @@ inputs:
     default: false
   token:
     description: Used to pull Go distributions from go-versions. Since there's a default, this is typically not supplied by the user. When running this action on github.com, the default value is sufficient. When running on GHES, you can pass a personal access token for github.com if you are experiencing rate limiting.
-    default: ${{ github.server_url == 'https://github.com' && github.token || '' }}
+    default: ${{ github.server_url == 'https://github.com' && github.token ||35be50b424609de83adbd36b2b1d81ee6a828dff}}
   cache:
     description: Used to specify whether caching is needed. Set to true, if you'd like to enable caching.
     default: true
